@@ -1,0 +1,62 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <H1>Even</H1>
+        <p id="p1"></p>
+        <H1>ODD</H1>
+        <p id="p2"></p>
+        <p id="v1"></p>
+        <p id="v2"></p>
+        <input type="number" id="n1"><br><br>
+        <input type="number" id="n2"><br><br>
+        <button onclick="ABC1()">CLICK</button>
+        <script>
+            var pp="12345";
+            for(var i=1;i<=10;i++)
+            {
+           if(i%2==0)
+           {
+            document.getElementById("p1")
+            .style.color="green";
+            document.getElementById("p1").
+            innerHTML+=pp+"<br>";
+           }
+           else
+           {
+            document.getElementById("p2")
+            .style.color="Red";
+            document.getElementById("p2").
+            innerHTML+=pp+"<br>";
+           }
+           
+            }
+            var name;
+            name=prompt("Enter Any Charater");
+            if(name=="a" || name=="e" || name=="i" || name=="o" || name=="u")
+            {
+                var status="YES this is Vowel";
+                document.getElementById("v1").innerHTML=status;
+            }
+            else
+            {
+                document.getElementById("v2").innerHTML=status;
+            }
+            function ABC1(){
+            var n1,n2;
+            n1=document.getElementById("n1").value;
+            n2=document.getElementById("n2").value;
+            if(n1>=n2)
+            {
+                document.getElementById("n1").style.backgroundColor="Blue";
+            }
+            else
+            {
+                document.getElementById("n2").style.backgroundColor="red";
+            }
+        }
+        </script>
+
+    </body>
+</html>
